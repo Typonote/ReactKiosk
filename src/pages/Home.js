@@ -1,13 +1,12 @@
-import TouchAppIcon from '@material-ui/icons/TouchApp';
 import React from 'react'
 import meal from '../assets/images/meal.png'
-import touch from '../assets/images/touch.svg'
+
 
 const Home = (props) => {
 
 
     return (
-        <div className='flex flex-col items-center justify-center bg-primary hover:bg-secondary'>
+        <div className='flex flex-col items-center justify-center'>
             <div
             className='w-full h-screen '
             onClick={() => props.history.push('/choose')}
