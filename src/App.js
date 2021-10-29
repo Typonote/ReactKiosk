@@ -11,13 +11,11 @@ function App() {
     <Provider store={store}>
       <div className='max-w-4xl max-h-full ml-auto mr-auto'>
         <Router>
-
+            
           <Switch>
-
               <Route path="/" component={Home} exact={true} />
               <Route path="/choose" component={OrderChoice} exact={true} />
               <Route path="/order" component={FoodOrder} exact={true} />
-
           </Switch>
     
         </Router>
