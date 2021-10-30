@@ -23,7 +23,7 @@ const FoodOrder = () => {
 
                 <div classsName=''>
                     
-                    <p className='font-mono text-white font-black py-5 text-3xl text-center mb-2 md:mb-5 px-2 break-words'>     
+                    <p className='font-mono text-white font-black py-5 text-2xl xl:text-3xl text-center mb-2 md:mb-5 px-2 break-words'>     
                         {typeOrder}을 선택하셨습니다.
                     </p>
 
