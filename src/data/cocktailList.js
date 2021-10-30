@@ -2,7 +2,7 @@ import Cocktail1 from '../assets/images/cocktail1.png'
 import Cocktail2 from '../assets/images/cocktail2.png'
 import Cocktail3 from '../assets/images/cocktail3.png'
 
-const cocktail =  [
+const cocktailList =  [
     {
         name: '블루하와이',   
         image: Cocktail1,
@@ -46,4 +46,4 @@ const cocktail =  [
 ];
 
 
-export default cocktail;
+export default cocktailList;
