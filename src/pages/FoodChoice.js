@@ -7,6 +7,9 @@ import Coffee from './Coffee';
 import Wine from './Wine';
 import OrderScreen from './OrderScreen';
 import App from '../App';
+import Payment from './Payment';
+import CompleteScreen from './CompleteScreen';
+
 
 
 
@@ -16,18 +19,15 @@ const FoodChoice = () => {
         <div className='w-full items-center bg-yellow-300 justify-center'>
         
             <Router>
-            
-                <NavBar />
-
+        
                 <Switch>
                     <Route path="/" component={App} exact={true} />
                     <Route path="/order" component={Cocktail} exact={true} />
                     <Route path="/order/coffee" component={Coffee} exact={true} />
                     <Route path="/order/wine" component={Wine} exact={true} />
+                    <Route path="/payment" component={Payment} exact={true} />
+                    <Route path="/complete" component={CompleteScreen} exact={true} />
                 </Switch>
-
-
-                <OrderScreen />
 
             </Router>
 

@@ -30,13 +30,12 @@ const OrderScreen = (props) => {
                         취소하기
                     </Link>
 
-                    <button
-                        // onClick={previewOrderHandler}
-                        // disabled={orderItems.length === 0}
+                    <Link
+                        to = '/payment'
                         className='bg-red-500 text-white text-xl font-bold py-3 rounded-lg mx-5'
                     >
                         주문하기
-                    </button>
+                    </Link>
 
                 </div>
             </div>
