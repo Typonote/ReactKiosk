@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import {actionAddOrder, actionRemoveOrder} from '../redux/action.js';
 
 const Menu = (props) => {
 
+    const [list, setList] = useState([]);
+
     const dispatch = useDispatch();
+
+    const addHandler = (item) => {
+        setList([item])
+        dispatch(actionAddOrder(list));  
+    };
 
     return (
         <div className ='grid grid-cols-2 xl:grid-cols-3 gap-2 xl:gap-4 mt-5'>
@@ -19,11 +26,12 @@ const Menu = (props) => {
                         <div>
                             <p className="text-xl font-semibold text-gray-900 mb-3">{option.name}</p>
                             <p className="text-md text-gray-800">{option.price}</p>
+                            <p className="text-md text-green-800">{option.idx}</p>
                         </div>
 
                         <p 
                         className="absolute right-2 bottom-2 bg-blue-300 hover:bg-blue-500 rounded-full p-2 cursor-pointer group"
-                        onClick={() => dispatch(actionAddOrder(option.name))}    
+                        onClick={() => addHandler(option.name)}    
                         >
                             
                             <svg className="h-6 w-6" fill="none" viewBox="0 0 20 20" stroke="black" xmlns="http://www.w3.org/2000/svg">

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Check from '../assets/images/check.png'
 
 const CompleteScreen = () => {
@@ -21,9 +22,11 @@ const CompleteScreen = () => {
 
             </div>
             <div className='flex justify-center items-center text-center p-5'>
-                <button className='w-2/4 p-5 transition-colors duration-700 transform bg-indigo-500 hover:bg-blue-500 text-gray-100 text-2xl font-bold rounded-lg focus:border-4 border-indigo-300'>
+                <Link
+                to='/'
+                className='w-2/4 p-5 transition-colors duration-700 transform bg-indigo-500 hover:bg-blue-500 text-gray-100 text-2xl font-bold rounded-lg focus:border-4 border-indigo-300'>
                     다시 주문하기
-                </button>
+                </Link>
             </div>
         </div>
     )

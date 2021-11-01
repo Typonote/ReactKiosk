@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const OrderScreen = (props) => {
 
     const typeOrder = useSelector(state => state).orderType;
-    const selectItem = useSelector(state => state).item;
+    const selectItem = useSelector(state => state).items;
 
     console.log('itemList',selectItem );
     
@@ -31,7 +31,7 @@ const OrderScreen = (props) => {
                     </Link>
 
                     <Link
-                        to = '/payment'
+                        to = '/choice/payment'
                         className='bg-red-500 text-white text-xl font-bold py-3 rounded-lg mx-5'
                     >
                         주문하기

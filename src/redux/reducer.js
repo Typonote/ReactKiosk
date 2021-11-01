@@ -1,6 +1,6 @@
 const initState = {
     orderType: [],
-    cart: [],
+    items: [],
 };
 
 const Reducer = (state = initState, action) => {
@@ -16,7 +16,7 @@ const Reducer = (state = initState, action) => {
     case 'ORDER_ADD_ITEM':
         return {
             ...state, 
-            item: action.item,
+            items: action.item
         };
 
     case 'ORDER_REMOVE_ITEM':
