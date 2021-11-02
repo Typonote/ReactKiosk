@@ -6,13 +6,13 @@ export const actionOrderType = orderType => ({
 
 // 구매 리스트에 저장
 export const actionAddOrder = item => ({
-    type: 'ORDER_ADD_ITEM',
+    type: 'ADD_ITEM',
     item,
 });
 
 // 구매 리스트에서 삭제
 export const actionRemoveOrder = item => ({
-    type: 'ORDER_REMOVE_ITEM',
+    type: 'REMOVE_ITEM',
     item,
 });
 

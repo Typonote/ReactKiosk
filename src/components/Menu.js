@@ -1,17 +1,19 @@
-import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import {actionAddOrder, actionRemoveOrder} from '../redux/action.js';
 
 const Menu = (props) => {
 
-    const [list, setList] = useState([]);
 
     const dispatch = useDispatch();
 
     const addHandler = (item) => {
-        setList([item])
-        dispatch(actionAddOrder(list));  
+        dispatch(actionAddOrder(item));  
     };
+
+    const selectItem = useSelector(state => state).items;
+
+    console.log('itemListMenu',selectItem );
 
     return (
         <div className ='grid grid-cols-2 xl:grid-cols-3 gap-2 xl:gap-4 mt-5'>
@@ -55,6 +57,8 @@ const Menu = (props) => {
 
                 </div>
             ))}
+
+            
         </div>
     )
 }

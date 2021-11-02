@@ -19,7 +19,7 @@ const OrderScreen = (props) => {
                     <p className='col-start-4 col-span-2 text-center text-xl font-bold'>갯수: {} 개</p>
                 </div>
 
-                <p className='text-xl font-bold'>{selectItem}</p>
+                <p className='bg-white rounded-lg mx-8 p-2 text-xl font-bold'>{selectItem}</p>
 
                 <div className='w-full grid grid-cols-2 p-5 gap-4 text-center'>
 
